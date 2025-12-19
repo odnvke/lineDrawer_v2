@@ -1,0 +1,58 @@
+{
+  "parametric_lines": {
+    "pattern": "connect",
+    "count": 60,
+    "points": [
+      {"func": "circle", "size": "300 + sin(n*angle_step*10)*25", "angle": "n*angle_step + time*0.3"},
+      {"func": "ngon", "size": "320 + sin(n*angle_step*10)*25", "angle": "(n+0.43 + sin(time*10)*0.2)*angle_step + time*0.3", "sides": 6},
+      {"func": "ngon", "size": 140,                            "angle": "(n+0.5 - sin(time*10)*0.2)*angle_step + time*0.3", "sides": 3},
+      {"func": "ngon", "size": "320 + sin(n*angle_step*10)*25", "angle": "(n+0.57 + sin(time*10)*0.2)*angle_step + time*0.3", "sides": 6},
+      {"func": "circle", "size": "300 + sin((n+1)*angle_step*10)*25", "angle": "(n+1)*angle_step + time*0.3"}
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+{
+  "parametric_lines": {
+    "pattern": "connectClosed",
+    "count": 80,
+    "color": [100, 200, 255],
+    "width": 1.5,
+    "points": [
+      {
+        "func": "circle",
+        "size": "180 + sin(n*angle_step*8 + time*2)*30",
+        "angle": "n*angle_step + sin(time)*0.5"
+      },
+      {
+        "func": "circle",
+        "size": "120 + cos(n*angle_step*6 + time*3)*25",
+        "angle": "n*angle_step + cos(time)*0.3 + pi/3"
+      },
+      {
+        "func": "circle",
+        "size": "80 + sin(n*angle_step*4 + time*4)*20",
+        "angle": "n*angle_step + sin(time*2)*0.2 + 2*pi/3"
+      },
+      {
+        "func": "circle",
+        "size": "40 + cos(n*angle_step*2 + time*5)*15",
+        "angle": "n*angle_step + cos(time*3)*0.1 + pi"
+      }
+    ]
+  }
+}
+
+
+
+
